@@ -101,10 +101,14 @@
                         <div class="span-3">
                             &nbsp;</div>
                         <div class="span-3">
-                            <a runat="server" href="#"><img src="Icons/003-profile.png" height="150" width="150" /></a>&nbsp;&nbsp;&nbsp;
-                            <a runat="server" href="#"><img src="Icons/002-success.png" height="150" width="150" /></a>&nbsp;&nbsp;&nbsp;
-                            <a runat="server" href="#"><img src="Icons/004-info.png" height="150" width="150" /></a>&nbsp;&nbsp;&nbsp;
-                            <a runat="server" href="#"><img src="Icons/001-arrows.png" height="150" width="150" /></a>
+
+                            <asp:ImageButton ID="AccountBtn" runat="server" Height="150px" ImageUrl="~/Icons/003-profile.png" OnClick="AccountBtn_Click" />
+&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="AchievementBtn" runat="server" Height="150px" ImageUrl="~/Icons/002-success.png" OnClick="AchievementBtn_Click" />
+&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="TutorialBtn" runat="server" Height="150px" ImageUrl="~/Icons/004-info.png" />
+&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="PlayBtn" runat="server" Height="150px" ImageUrl="~/Icons/001-arrows.png" />
                         </div>
                         <div class="span-3">
                             &nbsp;</div>
@@ -117,12 +121,14 @@
                 
             </asp:ContentPlaceHolder>
             <hr />
+            <!-- If we want to add a footer :)
             <div class="footer navbar-fixed-bottom text-center">
                 <ul class="nav navbar-nav">
                     <li><a href="#">The App</a></li>
                     <li><a href="#">About Us</a></li>
                 </ul>
             </div>
+            -->
             <!-- OLD STUFF
             <footer>
                 <p>&copy; <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>- My ASP.NET Application</p>

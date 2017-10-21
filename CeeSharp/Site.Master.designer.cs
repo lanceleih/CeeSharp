@@ -22,6 +22,42 @@ namespace CeeSharp {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl nav;
         
         /// <summary>
+        /// AccountBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton AccountBtn;
+        
+        /// <summary>
+        /// AchievementBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton AchievementBtn;
+        
+        /// <summary>
+        /// TutorialBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton TutorialBtn;
+        
+        /// <summary>
+        /// PlayBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton PlayBtn;
+        
+        /// <summary>
         /// MainContent control.
         /// </summary>
         /// <remarks>

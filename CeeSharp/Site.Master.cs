@@ -76,6 +76,18 @@ namespace CeeSharp
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }
+
+        protected void AccountBtn_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/Login");
+            
+        }
+
+        protected void AchievementBtn_Click(object sender, ImageClickEventArgs e)
+        {
+            //Test
+            Response.Redirect("~/About");
+        }
     }
 
 }
