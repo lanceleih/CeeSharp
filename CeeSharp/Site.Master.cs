@@ -85,8 +85,7 @@ namespace CeeSharp
 
         protected void AchievementBtn_Click(object sender, ImageClickEventArgs e)
         {
-            //Test
-            Response.Redirect("~/About");
+            Response.Redirect("~/Achievements");
         }
     }
 
