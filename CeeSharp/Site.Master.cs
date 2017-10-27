@@ -69,12 +69,23 @@ namespace CeeSharp
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //nav.Visible = false;
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+        }
+
+        protected void AccountBtn_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/Login");
+            
+        }
+
+        protected void AchievementBtn_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/Achievements");
         }
     }
 
