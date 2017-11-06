@@ -10,6 +10,6 @@
 namespace CeeSharp {
     
     
-    public partial class _Default {
+    public partial class Login {
     }
 }

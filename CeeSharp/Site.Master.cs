@@ -46,6 +46,18 @@ namespace CeeSharp
             }
 
             Page.PreLoad += master_Page_PreLoad;
+            if(Session["HiddenNav"] != null)
+            {
+                var hideNav = Session["HiddenNav"];
+                if(hideNav.Equals("hide"))
+                {
+                    navIcons.Visible = false;
+                    Session["HiddenNav"] = "show";
+                } else
+                {
+                    navIcons.Visible = true;
+                }
+            }
         }
 
         protected void master_Page_PreLoad(object sender, EventArgs e)
@@ -75,6 +87,29 @@ namespace CeeSharp
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+        }
+
+        protected void AccountBtn_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/Login");
+            
+        }
+
+        protected void AchievementBtn_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/Achievements");
+        }
+
+        protected void TutorialBtn_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/Tutorial");
+        }
+
+        protected void PlayBtn_Click(object sender, ImageClickEventArgs e)
+        {
+            Session["HiddenNav"] = "hide";
+            Response.Redirect("~/Game");
+
         }
     }
 
