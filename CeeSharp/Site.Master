@@ -91,7 +91,7 @@
         </div>
         -->
         <div class="container body-content">
-            <div class="container text-center">
+            <div id="navIcons" runat="server" class="container text-center">
                     <br />
                     <br />
                     <h1>NoteWorthy</h1>
@@ -106,9 +106,9 @@
 &nbsp;&nbsp;&nbsp;
                             <asp:ImageButton ID="AchievementBtn" runat="server" Height="150px" ImageUrl="~/Icons/002-success.png" OnClick="AchievementBtn_Click" />
 &nbsp;&nbsp;&nbsp;
-                            <asp:ImageButton ID="TutorialBtn" runat="server" Height="150px" ImageUrl="~/Icons/004-info.png" />
+                            <asp:ImageButton ID="TutorialBtn" runat="server" Height="150px" ImageUrl="~/Icons/004-info.png" OnClick="TutorialBtn_Click" />
 &nbsp;&nbsp;&nbsp;
-                            <asp:ImageButton ID="PlayBtn" runat="server" Height="150px" ImageUrl="~/Icons/001-arrows.png" />
+                            <asp:ImageButton ID="PlayBtn" runat="server" Height="150px" ImageUrl="~/Icons/001-arrows.png" OnClick="PlayBtn_Click" />
                         </div>
                         <div class="span-3">
                             &nbsp;</div>

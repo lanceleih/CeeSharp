@@ -5,7 +5,7 @@
             <div id="achievements" runat="server">
                 
                 <div class="row">
-                    <div class="col-xs-6" style="left: 0px; top: 0px; width: 31%" >
+                    <div class="col-xs-6" style="left: 0px; top: 0px; width: 34%" >
                         <asp:Image ID="ProfilePic" CssClass="pull-right" runat="server" Height="110px" ImageUrl="~/Icons/003-profile.png" />
                     </div>
                     <div class="col-xs-6">
